@@ -28,13 +28,13 @@ Creates the basic repository structure for python projects
 Current working directory: /path/to/repository-setup
 
 Target directory: /path/to/repo/dir
-Name of new repository: new-repo
+Name of new repository: new-module-repo
 
 Creation Datetime: 01/01/1970 10:11:12
 
 ################################################################################
 
-Repository of type module created successfully under ..\test1!
+Repository of type module created successfully under /path/to/repo/dir/new-module-repo
 
 ################################################################################
 ```
