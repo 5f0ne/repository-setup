@@ -11,11 +11,10 @@ Creates the basic repository structure for python projects
 |---|---|---|---|---|
 |--path | -p | String | - | Path of the directory in which the repository shall be created |
 |--name | -n | String | - | Name of the new repository |
-| --type | -t | String | - | Creates either a module or a lib | 
 
 # Example
 
-`python main.py -p /path/to/repo/dir -n new-module-repo -t module`
+`python main.py -p /path/to/repo/dir -n new-module-repo`
 
 Creates the following result:
 
@@ -45,21 +44,15 @@ With the following folder structure:
 /path/to/repo/dir/new-module-repo
 ├─── example
 └─── /src
-     └─── Controller.py
+     └─── /new_module_repo
+          └─── __init__.py
+          └─── __main__.py
+          └─── Controller.py
 └─── .gitignore
-└─── main.py
 └─── LICENSE.md
-└─── README.md 
-```
-
-The structure for a lib repo looks like:
-```
-/path/to/repo/dir/new-lib-repo
-└─── /src
-└─── .gitignore
+└─── README.md
+└─── setup.py
 └─── main.py
-└─── LICENSE.md
-└─── README.md 
 ```
 
 # License
