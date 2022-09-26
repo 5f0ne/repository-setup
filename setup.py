@@ -7,7 +7,8 @@ setup(
     name="repository_setup",            
     version="1.0.0",
     author="5f0",
-    description="Creates the basic repository structure for python projects",
+    url="https://github.com/5f0ne/repository-setup",
+    description="Creates the basic repository structure for python projects",    
     classifiers=[
         "Operating System :: OS Independent ",
         "Programming Language :: Python :: 3 ",

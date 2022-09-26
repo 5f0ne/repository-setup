@@ -7,6 +7,7 @@ setup(
     name="Insert Name here...",             # This name is used in: pip install hello-world
     version="1.0.0",
     author="5f0",
+    url="https://github.com/5f0ne/repo-name",
     description="Insert description here...",
     classifiers=[
         "Operating System :: OS Independent ",

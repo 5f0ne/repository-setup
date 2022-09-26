@@ -2,9 +2,13 @@
 
 Creates the basic repository structure for python projects
 
+# Installation
+
+`pip install repository_setup`
+
 # Usage
 
-`main.py [-h] --path PATH --name NAME`
+`python -m repository_setup [-h] --path PATH --name NAME`
 
 
 | Option | Short | Type | Default | Description |
@@ -14,7 +18,7 @@ Creates the basic repository structure for python projects
 
 # Example
 
-`python main.py -p /path/to/repo/dir -n new-module-repo`
+`python -m repository_setup -p /path/to/repo/dir -n new-module-repo`
 
 Creates the following result:
 
