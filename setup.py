@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as r:
     desc = r.read()
@@ -18,7 +18,13 @@ setup(
     long_description=desc,
     long_description_content_type="text/markdown",
     package_dir={"": "src"},
-    packages=["repository_setup"],
+    packages=find_packages(where='src'),
+    include_package_data=True,
+    package_data={
+        "repository_setup.files": ["__init__.py", "__main__.py", ".gitignore",
+                                   "Controller.py", "LICENSE.md", "README.md",
+                                   "setup.py"]
+    },
     install_requires=[
         
     ],
@@ -26,8 +32,5 @@ setup(
         "console_scripts": [
             "repository_setup = repository_setup.__main__:main"
         ]
-    },
-    data_files=[("files", ["files/__init__.py", "files/__main__.py", "files/.gitignore", 
-                           "files/Controller.py", "files/LICENSE.md", "README.md",
-                           "setup.py"])]
+    }
 )

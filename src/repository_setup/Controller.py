@@ -41,15 +41,19 @@ class Controller():
 
             # 2.) Add files to package dir
 
-            shutil.copy(os.path.join("files", "__init__.py"), os.path.join(packageDir, "__init__.py"))
-            shutil.copy(os.path.join("files", "__main__.py"), os.path.join(packageDir, "__main__.py"))
-            shutil.copy(os.path.join("files", "Controller.py"), os.path.join(packageDir, "Controller.py"))
+            # This is the path of the directory in which Controller is located
+            # this path is used to get the files path
+            p = os.path.dirname(__file__)
+
+            shutil.copy(os.path.join(p, "files", "__init__.py"), os.path.join(packageDir, "__init__.py"))
+            shutil.copy(os.path.join(p, "files", "__main__.py"), os.path.join(packageDir, "__main__.py"))
+            shutil.copy(os.path.join(p, "files", "Controller.py"), os.path.join(packageDir, "Controller.py"))
             
             # 3.) Add other files
-            shutil.copy(os.path.join("files", ".gitignore"), os.path.join(repositoryDir, ".gitignore"))
-            shutil.copy(os.path.join("files", "LICENSE.md"), os.path.join(repositoryDir, "LICENSE.md"))
-            shutil.copy(os.path.join("files", "README.md"), os.path.join(repositoryDir, "README.md"))
-            shutil.copy(os.path.join("files", "setup.py"), os.path.join(repositoryDir, "setup.py"))
+            shutil.copy(os.path.join(p, "files", ".gitignore"), os.path.join(repositoryDir, ".gitignore"))
+            shutil.copy(os.path.join(p, "files", "LICENSE.md"), os.path.join(repositoryDir, "LICENSE.md"))
+            shutil.copy(os.path.join(p, "files", "README.md"), os.path.join(repositoryDir, "README.md"))
+            shutil.copy(os.path.join(p, "files", "setup.py"), os.path.join(repositoryDir, "setup.py"))
 
 
             print("Repository of created successfully under " + repositoryDir + "!")
