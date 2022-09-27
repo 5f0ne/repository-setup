@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as r:
     desc = r.read()
@@ -18,7 +18,11 @@ setup(
     long_description=desc,
     long_description_content_type="text/markdown",
     package_dir={"": "src"},
-    packages=["Insert package names under src here", "a new entry for each package"],
+    packages=find_packages(where='src'),
+    include_package_data=True,
+    package_data={
+        "repository_setup.files": ["Add files here...."]
+    },
     install_requires=[
         "Add dependencies here..."
     ]
