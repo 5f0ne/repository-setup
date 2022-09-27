@@ -25,5 +25,10 @@ setup(
     },
     install_requires=[
         "Add dependencies here..."
-    ]
+    ],
+     entry_points={
+        "console_scripts": [
+            "repo-name = repo-name.__main__:main"
+        ]
+    }
 )
