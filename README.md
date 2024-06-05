@@ -50,8 +50,8 @@ With the following folder structure:
 └─── /src
      └─── /new_module_repo
           └─── /output
-                    └─── __init__.py
-                    └─── Output.py
+               └─── __init__.py
+               └─── Output.py
           └─── /util
                └─── __init__.py
                └─── Util.py
@@ -60,12 +60,10 @@ With the following folder structure:
                └─── Args.py
           └─── __init__.py
           └─── __main__.py
-          └─── Controller.py
 └─── .gitignore
 └─── LICENSE.md
 └─── README.md
 └─── setup.py
-└─── main.py
 ```
 
 # License
