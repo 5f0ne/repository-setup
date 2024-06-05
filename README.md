@@ -46,8 +46,7 @@ With the following folder structure:
 
 ```
 /path/to/repo/dir/new-module-repo
-├─── example
-└─── /src
+├─── /src
      └─── /new_module_repo
           └─── /output
                └─── __init__.py

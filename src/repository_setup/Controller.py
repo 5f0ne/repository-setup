@@ -30,9 +30,6 @@ class Controller():
             mainDir = os.mkdir(repositoryDir)
 
             # 1.) Create sub dirs
-            exampleDir = os.path.join(repositoryDir, "example")
-            os.mkdir(exampleDir)
-
             srcDir = os.path.join(repositoryDir, "src")
             os.mkdir(srcDir)
 
