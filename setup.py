@@ -5,7 +5,7 @@ with open("README.md", "r") as r:
 
 setup(
     name="repository_setup",            
-    version="1.0.2",
+    version="2.0.0",
     author="5f0",
     url="https://github.com/5f0ne/repository-setup",
     description="Creates the basic repository structure for python projects",    
@@ -21,8 +21,8 @@ setup(
     packages=find_packages(where='src'),
     include_package_data=True,
     package_data={
-        "repository_setup.files": ["__init__.py", "__main__.py", ".gitignore",
-                                   "Controller.py", "LICENSE.md", "README.md",
+        "repository_setup.files": ["__init__.py", "__main__.py", "Args.py", ".gitignore",
+                                   "Output.py", "Util.py", "LICENSE.md", "README.md",
                                    "setup.py"]
     },
     install_requires=[
